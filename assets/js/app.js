@@ -93,7 +93,7 @@ if (document.querySelector(".hero")) {
         let heroData = [];
 
         // Fetch JSON data
-        fetch("../../config/hero-data.json")
+        fetch("config/hero-data.json")
             .then(response => response.json()) 
             .then(data => {
                 heroData = data;
@@ -143,7 +143,7 @@ if (document.querySelector(".project-name")) {
         // Fetch JSON data
         console.log('It is working');
         
-        fetch("../../config/projects.json")
+        fetch("config/projects.json")
             .then(response => response.json())
             .then(data => {
                 let currentIndex = 0; // Track current project index

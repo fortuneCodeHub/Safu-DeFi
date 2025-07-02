@@ -104,7 +104,7 @@ if (document.querySelector(".hero")) {
             
 
         function updateHeroText() {
-            console.log(heroData);
+            // console.log(heroData);
             
             if (heroData.length === 0) return;
 
@@ -141,7 +141,7 @@ if (document.querySelector(".hero")) {
 if (document.querySelector(".project-name")) {
     document.addEventListener("DOMContentLoaded", function() {
         // Fetch JSON data
-        console.log('It is working');
+        // console.log('It is working');
         
         fetch("config/projects.json")
             .then(response => response.json())
@@ -161,7 +161,7 @@ if (document.querySelector(".project-name")) {
                 moreCaseStudiesBtn.addEventListener("click", function(event) {
                     event.preventDefault();
                     updateProject();
-                    console.log('It is working 2');
+                    // console.log('It is working 2');
                 });
             })
             .catch(error => console.error("Error loading projects:", error));

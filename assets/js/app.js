@@ -141,6 +141,8 @@ if (document.querySelector(".hero")) {
 if (document.querySelector(".project-name")) {
     document.addEventListener("DOMContentLoaded", function() {
         // Fetch JSON data
+        console.log('It is working');
+        
         fetch("../../config/projects.json")
             .then(response => response.json())
             .then(data => {

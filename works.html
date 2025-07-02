@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAFU DeFi</title>
+    <!-- Tailwind CSS -->
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+
+    <!-- Manrope fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Russo+One&display=swap" rel="stylesheet">
+
+
+    <!-- Customize tailwind CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- GSAP CDN's -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+<body class="bg-gray-900 text-white">
+    <div class="hero-nav-container">
+        <!-- <div id="floating-container"></div> -->
+
+        <div class="container m-auto" style="z-index: 10;">
+            <header class="glass text-white py-4 px-6 shadow-md md:rounded-full w-full md:relative absolute top-0 left-0 z-50">
+                <div class="container mx-auto flex justify-between items-center">
+                    <a href="assets/docs/👤 Safu-DeFi CV.pdf" class="text-2xl font-bold flex items-center">
+                        <img src="assets/images/C0Oi33QM_400x400.jpg" alt="" class="w-8 h-8 rounded-full me-2">
+                        <h6 class="hover-text">SAFU DeFi</h6>
+                    </a>
+            
+                    <nav class="hidden md:flex space-x-6">
+                        <a href="index.html#about" class="nav-link hover:text-gray-400 hover-text">About</a>
+                        <a href="works.html" class="nav-link hover:text-gray-400 hover-text">Works</a>
+                        <a href="index.html#contact" class="nav-link hover:text-gray-400 hover-text">Contact</a>
+                    </nav>
+            
+                    <div class="flex items-center space-x-4">
+                        <h6 class="me-2 hover-text">JOIN US</h6>
+                        <a href="https://x.com/fortuneCodeHub?t=qY098UDBlf3QM5pSNRc8Vw&s=09" class="text-xl hover:text-gray-400" target="_blank" rel="noopener noreferrer"><i class="bi bi-twitter"></i></a>
+                        <a href="https://t.me/fortuneCodeHub12" class="text-xl hover:text-gray-400" target="_blank" rel="noopener noreferrer"><i class="bi bi-telegram"></i></a>
+            
+                        <!-- Hamburger Menu Button -->
+                        <button class="md:hidden text-xl cursor-pointer" id="menu-btn">
+                            <i class="bi bi-list"></i>
+                        </button>
+                    </div>
+                </div>
+            </header>
+        </div>
+
+        <!-- Mobile Dropdown Menu -->
+        <nav class="fixed inset-0 dropdown-bg-color bg-opacity-95 text-white flex flex-col items-center justify-center text-xl space-y-6 z-50 transform translate-y-full transition-transform duration-300 ease-in-out md:hidden hidden" id="mobile-menu" style="font-family: 'Russo One', sans-serif;">
+            <button class="absolute cursor-pointer top-4 right-4 text-3xl" id="close-menu">
+                <i class="bi bi-x"></i> 
+            </button>
+            <a href="index.html#about" class="nav-link hover:text-gray-400 hover-text menu-link-btn">About</a>
+            <a href="works.html" class="nav-link hover:text-gray-400 hover-text menu-link-btn">Works</a>
+            <a href="index.html#contact" class="nav-link hover:text-gray-400 hover-text menu-link-btn">Contact</a>
+        </nav>
+
+    </div>
+
+    <main class="relative z-10 main-bg-container scroll-container">
+    
+        <!-- Fasqon Project Section -->
+        <section class="container mx-auto pt-16 pb-20 lg:px-10 md:px-7 px-4" id="fasqon">
+            <h2 class="text-3xl font-bold text-white mb-10">Fasqon Community Contributions</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+                <!-- <div class="overflow-hidden rounded-2xl shadow-lg bg-white hover:shadow-xl transition duration-300 ease-in-out transform hover:-translate-y-1">
+                    <img src="assets/images/fasqon-1.jpg" alt="Fasqon Screenshot 1" class="w-full h-auto object-cover hover:scale-105 transition duration-300">
+                </div>
+                <div class="overflow-hidden rounded-2xl shadow-lg bg-white hover:shadow-xl transition duration-300 ease-in-out transform hover:-translate-y-1">
+                    <img src="assets/images/fasqon-2.jpg" alt="Fasqon Screenshot 2" class="w-full h-auto object-cover hover:scale-105 transition duration-300">
+                </div>
+                <div class="overflow-hidden rounded-2xl shadow-lg bg-white hover:shadow-xl transition duration-300 ease-in-out transform hover:-translate-y-1">
+                    <img src="assets/images/fasqon-3.jpg" alt="Fasqon Screenshot 3" class="w-full h-auto object-cover hover:scale-105 transition duration-300">
+                </div> -->
+                <div class="overflow-hidden rounded-2xl h-[300px] w-full shadow-lg bg-white hover:shadow-xl transition duration-300 ease-in-out transform hover:-translate-y-1">
+                    <a href="assets/images/fasqon-1.jpg">
+                        <img src="assets/images/fasqon-1.jpg" alt="AngryMiner Screenshot 1" class="w-full h-auto hover:scale-105 transition duration-300">
+                    </a>
+                </div>
+                <div class="overflow-hidden rounded-2xl h-[300px] w-full shadow-lg bg-white hover:shadow-xl transition duration-300 ease-in-out transform hover:-translate-y-1">
+                    <a href="assets/images/fasqon-2.jpg">
+                        <img src="assets/images/fasqon-2.jpg" alt="AngryMiner Screenshot 1" class="w-full h-auto hover:scale-105 transition duration-300">
+                    </a>
+                </div>
+                <div class="overflow-hidden rounded-2xl h-[300px] w-full shadow-lg bg-white hover:shadow-xl transition duration-300 ease-in-out transform hover:-translate-y-1">
+                    <a href="assets/images/fasqon-3.jpg">
+                        <img src="assets/images/fasqon-3.jpg" alt="AngryMiner Screenshot 1" class="w-full h-auto hover:scale-105 transition duration-300">
+                    </a>
+                </div>
+            </div>
+        </section>
+    
+        <!-- AngryMiner Project Section -->
+        <section class="container mx-auto pt-16 pb-20 lg:px-10 md:px-7 px-4" id="angryminer">
+            <h2 class="text-3xl font-bold text-white mb-10">AngryMiner Community Contributions</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+                <div class="overflow-hidden rounded-2xl h-[300px] w-full shadow-lg bg-white hover:shadow-xl transition duration-300 ease-in-out transform hover:-translate-y-1">
+                    <a href="assets/images/angry-miner-1.jpg">
+                        <img src="assets/images/angry-miner-1.jpg" alt="AngryMiner Screenshot 1" class="w-full h-auto hover:scale-105 transition duration-300">
+                    </a>
+                </div>
+                <div class="overflow-hidden rounded-2xl h-[300px] w-full shadow-lg bg-white hover:shadow-xl transition duration-300 ease-in-out transform hover:-translate-y-1">
+                    <a href="assets/images/angry-miner-2.jpg">
+                        <img src="assets/images/angry-miner-2.jpg" alt="AngryMiner Screenshot 1" class="w-full h-auto hover:scale-105 transition duration-300">
+                    </a>
+                </div>
+            </div>
+        </section>
+    
+    </main> 
+
+
+    <script src="assets/js/app.js"></script>
+</body>
+</html>

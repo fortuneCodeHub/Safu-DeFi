@@ -1,0 +1,37 @@
+[
+    {
+        "id": 1,
+        "headContent": "Need Your Community Managed?",
+        "bottomContent": "We Make It Happen"
+    }, 
+    {
+        "id": 2,
+        "headContent": "Need A Web-Dev Expert?",
+        "bottomContent": "We Build With Precision"
+    },
+    {
+        "id": 3,
+        "headContent": "Need Hype and Engagement?",
+        "bottomContent": "We Make It Viral"
+    },
+    {
+        "id": 4,
+        "headContent": "Need More Connections?",
+        "bottomContent": "We Make It Happen"
+    },
+    {
+        "id": 5,
+        "headContent": "Obsessed with NFTs??",
+        "bottomContent": "We Live & Breathe It"
+    },
+    {
+        "id": 6,
+        "headContent": "Need A Brand Ambassador?",
+        "bottomContent": "We Represent Your Brand"
+    },
+    {
+        "id": 7,
+        "headContent": "Need Powerful Content?",
+        "bottomContent": "We Transform Ideas"
+    }
+]

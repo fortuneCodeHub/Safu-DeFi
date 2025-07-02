@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Russo+One&display=swap');
+
+
+@layer base {
+    body {
+        font-family: "Manrope", serif;
+        background: linear-gradient(to right, #0f0c29, #302b63, #24243e); 
+        overflow-x: hidden;
+    }
+    header {
+        font-family: "Russo One", serif;
+    }
+}
+
+a {
+    font-family: "Russo One", sans-serif;
+}
+
+.dropdown-bg-color {
+    background-color:  #0f0c29;
+}
+
+.glitch { animation: glitch 1s infinite alternate; }
+@keyframes glitch {
+    0% { text-shadow: 2px 2px #0ff, -2px -2px #f0f; }
+    100% { text-shadow: -2px -2px #0ff, 2px 2px #f0f; }
+}
+
+.glitch-bg { animation: glitch-bg 1s infinite alternate; }
+@keyframes glitch-bg {
+    0% { box-shadow: 2px 2px #0ff, -2px -2px #f0f; }
+    100% { box-shadow: -2px -2px #0ff, 2px 2px #f0f; }
+}
+.glass {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+.hero-nav-container {
+    position: relative;
+}
+.floating-up { 
+    position: absolute; 
+    top: 100%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    width: 40px; 
+    height: 40px; 
+    background: rgba(255, 255, 255, 0.3); 
+    border-radius: 50%; 
+    animation: float-up 10s infinite alternate ease-in-out;
+}
+.floating-down { 
+    position: absolute; 
+    z-index: 1;
+    width: 40px; 
+    height: 40px; 
+    background: rgba(255, 255, 255, 0.3); 
+    border-radius: 50%; 
+    animation: float-down 10s infinite alternate ease-in-out;
+}
+#floating-container {
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.header {
+    position: relative;
+    /* z-index: 2; */
+}
+.hero {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+.main-bg-container {
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    padding-top: 60px;
+}
+#mobile-menu {
+    padding: 60px 0px;
+    padding-left: 20px;
+    height: 100vh;
+    /* display: flex; */
+    align-items: start;
+    flex-direction: column;
+    font-size: 50px;
+    justify-content: center;
+}
+.stack-area {
+    border-radius: 50px;
+    /* color: #93c57279; */
+}
+/* @keyframes float-up {
+    0% { transform: translateY(0) translateX(0); }
+    100% { transform: translateY(-100vh) translateX(50vw); }
+}
+@keyframes float-down {
+    0% { transform: translateY(0) translateX(0); }
+    100% { transform: translateY(100vh) translateX(-50vw); }
+} */
+
+@keyframes float-up {
+    0% { transform: translateY(0) translateX(0); }
+    100% { transform: translateY(-100vh) translateX(20vw); } /* Less horizontal movement */
+}
+@keyframes float-down {
+    0% { transform: translateY(0) translateX(0); }
+    100% { transform: translateY(100vh) translateX(-20vw); } /* Less horizontal movement */
+}
+
+
+.display-work {
+    transition: all .5s linear;
+}
+.display-work:hover {
+    transform: translateY(-13px);
+}

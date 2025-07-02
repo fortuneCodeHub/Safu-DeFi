@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAFU DeFi</title>
+    <!-- Tailwind CSS -->
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+
+    <!-- Manrope fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Russo+One&display=swap" rel="stylesheet">
+
+
+    <!-- Customize tailwind CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- GSAP CDN's -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+<body class="bg-gray-900 text-white">
+    <div class="hero-nav-container">
+        <div id="floating-container"></div>
+
+        <div class="container m-auto" style="z-index: 10;">
+            <header class="glass text-white py-4 px-6 shadow-md md:rounded-full w-full md:relative absolute top-0 left-0 z-50">
+                <div class="container mx-auto flex justify-between items-center">
+                    <a href="#" class="text-2xl font-bold flex items-center">
+                        <img src="assets/images/C0Oi33QM_400x400.jpg" alt="" class="w-8 h-8 rounded-full me-2">
+                        <h6 class="hover-text">SAFU DeFi</h6>
+                    </a>
+            
+                    <nav class="hidden md:flex space-x-6">
+                        <a href="index.html#about" class="nav-link hover:text-gray-400 hover-text">About</a>
+                        <a href="index.html#works" class="nav-link hover:text-gray-400 hover-text">Works</a>
+                        <a href="index.html#contact" class="nav-link hover:text-gray-400 hover-text">Contact</a>
+                    </nav>
+            
+                    <div class="flex items-center space-x-4">
+                        <h6 class="me-2 hover-text">JOIN US</h6>
+                        <a href="https://x.com/fortuneCodeHub?t=qY098UDBlf3QM5pSNRc8Vw&s=09" class="text-xl hover:text-gray-400" target="_blank" rel="noopener noreferrer"><i class="bi bi-twitter"></i></a>
+                        <a href="https://t.me/fortuneCodeHub12" class="text-xl hover:text-gray-400" target="_blank" rel="noopener noreferrer"><i class="bi bi-telegram"></i></a>
+            
+                        <!-- Hamburger Menu Button -->
+                        <button class="md:hidden text-xl cursor-pointer" id="menu-btn">
+                            <i class="bi bi-list"></i>
+                        </button>
+                    </div>
+                </div>
+            </header>
+        </div>
+
+        <!-- Mobile Dropdown Menu -->
+        <nav class="fixed inset-0 dropdown-bg-color bg-opacity-95 text-white flex flex-col items-center justify-center text-xl space-y-6 z-50 transform translate-y-full transition-transform duration-300 ease-in-out md:hidden hidden" id="mobile-menu" style="font-family: 'Russo One', sans-serif;">
+            <button class="absolute cursor-pointer top-4 right-4 text-3xl" id="close-menu">
+                <i class="bi bi-x"></i> 
+            </button>
+            <a href="index.html#about" class="nav-link hover:text-gray-400 hover-text menu-link-btn">About</a>
+            <a href="index.html#works" class="nav-link hover:text-gray-400 hover-text menu-link-btn">Works</a>
+            <a href="index.html#contact" class="nav-link hover:text-gray-400 hover-text menu-link-btn">Contact</a>
+        </nav>
+
+        <!-- Hero Section -->
+        <section class="text-center py-16 container mx-auto header hero z-10 md:px-10 px-4">
+            <div class="text-start w-1/2 mb-20">
+                <h1 class="lg:text-8xl md:text-6xl text-5xl glitch animate-text head-content">Need Your Community Managed?</h1>
+            </div>
+            <div class="flex justify-between items-end md:flex-row flex-col">
+                <div class="md:w-2/5 w-3/5 text-end md:order-2 order-1 md:ms-0 ms-auto md:mb-0 mb-15">
+                    <h1 class="lg:text-8xl md:text-6xl text-5xl glitch animate-text bottom-content">We Make It Happen</h1>
+                </div>
+                <div class="md:w-3/5 w-4/5 text-start md:order-1 order-2 md:me-0 me-auto">
+                    <h1 class="lg:text-xl text-lg animate-text">
+                        We at SAFU DeFi learn from every experience by pushing the boundaries past the ordinary. Let’s simplify development & web3, together.
+                    </h1>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <main class="bg-gray-900 relative z-10 main-bg-container scroll-container">
+
+
+        <section class="container mx-auto md:pt-30 md:pb-40 pt-20 pb-30 lg:px-10 md:px-7 px-4" id="about">
+
+            <div class="scroll-trigger-1 mb-30 md:mx-auto md:w-9/10 w-full">
+                <h1 class="lg:text-7xl md:text-6xl text-4xl glitch mb-10">
+                    We tackle each project as a new
+                    partnership and make sure to
+                    simplify every process, even when
+                    facing the most complex problems.
+                </h1>
+                <br>
+                <a href="#" class="px-6 py-7 text-white text-lg font-semibold rounded-full bg-gradient-to-r from-fuchsia-600 to-indigo-900 hover:from-fuchsia-400 hover:to-indigo-700 transition-all duration-300">
+                    Know More About SAFU DeFi
+                </a>
+            </div>
+
+            <div class="container mx-auto bg-[#f8f1ec] md:py-30 py-15 font-semibold md:px-10 px-5 stack-area scroll-trigger-2">
+                <h1 class="lg:text-6xl md:text-4xl w-full text-3xl mb-10 text-black scroll-trigger-3">
+                    <div class="flex flex-row flex-wrap gap-2">
+                        We specialize in 
+                        <div class="md:px-5 px-3 py-2 bg-[#93c57279] text-[#93c572] rounded-lg cursor-pointer">
+                            Community Growth
+                        </div>
+                        <div class="md:px-5 px-3 py-2 bg-[#93c57279] text-[#93c572] rounded-lg cursor-pointer">
+                            Web Development
+                        </div>,
+                        <div class="md:px-5 px-3 py-2 bg-[#93c57279] text-[#93c572] rounded-lg cursor-pointer">
+                            Affiliate Marketing
+                        </div>, and
+                        <div class="md:px-5 px-3 py-2 bg-[#93c57279] text-[#93c572] rounded-lg cursor-pointer">
+                            NFT
+                        </div> &
+                        <div class="md:px-5 px-3 py-2 bg-[#93c57279] text-[#93c572] rounded-lg cursor-pointer">
+                            Crypto Engagement
+                        </div>
+                        <span>using</span>
+                        <div class="md:px-5 px-3 py-2 bg-[#892be25d] text-[#8A2BE2] rounded-lg cursor-pointer">
+                            Laravel
+                        </div>,
+                        <div class="md:px-5 px-3 py-2 bg-[#892be25d] text-[#8A2BE2] rounded-lg cursor-pointer">
+                            PHP
+                        </div>,
+                        <div class="md:px-5 px-3 py-2 bg-[#892be25d] text-[#8A2BE2] rounded-lg cursor-pointer">
+                            JavaScript, React
+                        </div>,
+                        <div class="md:px-5 px-3 py-2 bg-[#892be25d] text-[#8A2BE2] rounded-lg cursor-pointer">
+                            Nest & Next
+                        </div>,
+                        <div class="md:px-5 px-3 py-2 bg-[#892be25d] text-[#8A2BE2] rounded-lg cursor-pointer">
+                            Solidity
+                        </div>, and
+                        <div class="md:px-5 px-3 py-2 bg-[#892be25d] text-[#8A2BE2] rounded-lg cursor-pointer">
+                            Growth Hacking
+                        </div>.
+                    </div>
+                </h1>
+            </div>
+        </section>
+
+    </main>
+
+    <main class="relative z-10 bg-[#f8f1ec]" id="works">
+
+        <section class="container  mx-auto md:pt-30 md:pb-40 pt-20 pb-30 lg:px-10 md:px-7 px-4 scroll-trigger-4">
+            <h1 class="lg:text-7xl md:mx-auto lg:w-9/10 w-full md:text-6xl text-4xl text-black font-semibold mb-10 scroll-trigger-5 glitch">
+                This isn’t our first rodeo. <br>
+                Projects we've worked on & ongoing ones:
+            </h1>
+            <br> 
+            <div class="group relative lg:py-30 md:py-20 py-10 px-6 md:mx-auto lg:w-9/10 overflow-hidden rounded-[50px] cursor-pointer bg-cover bg-center transition-all duration-300 ease-in-out display-work" style="background-image: url(assets/images/63f63b60110323117e4c7e10_Frame\ 6.svg);">
+                <div class="relative z-10 scroll-trigger-6"> <!-- Ensures content stays above background -->
+                    <div class="lg:mb-20 mb-10">
+                        <h2 class="lg:text-5xl md:text-3xl text-xl font-semibold text-black project-name">
+                            Angry Miner TG Bot (Crypto Mining Project that allows withdraw before airdrop): 
+                            <span class="text-gray-500 project-about">We help moderate and keep the community chats live.</span>
+                        </h2>
+                    </div>
+                    <a href="#" class="inline-block mt-4 lg:px-15 px-10 py-5 bg-[#892be25d] text-[#8A2BE2] md:text-lg text-[12px] font-semibold rounded-full shadow-md transition-all duration-300 hover:bg-gray-200">
+                        Know How
+                    </a>
+                </div>
+            
+                <!-- Background Image Effect on Hover -->
+                <div class="absolute inset-0 bg-center bg-cover transition-transform duration-300 ease-in-out scale-100 group-hover:scale-110 group-hover:translate-y-[-10px]" style="background-image: url(assets/images/63f63b60110323117e4c7e10_Frame\ 6.svg);">
+                </div>
+            </div>    
+            <div class="mx-auto lg:w-9/10 w-full text-end py-5">
+                <!-- <a href="#" class="inline-block mt-4 lg:px-15 px-10 py-5 bg-[#892be25d] text-[#8A2BE2] md:text-lg text-[12px] font-semibold rounded-full shadow-md transition-all duration-300 hover:bg-gray-200">
+                    More Case Studies (5) <i class="bi bi-chevron-right"></i>
+                </a> -->
+                <a href="#" class="inline-block mt-4 lg:px-15 px-10 py-5 bg-[#892be25d] text-[#8A2BE2] md:text-lg text-[12px] font-semibold rounded-full shadow-md transition-all duration-300 hover:bg-gray-200 more-case-studies">
+                    More Case Studies (5) <i class="bi bi-chevron-right"></i>
+                </a>
+            </div>        
+        </section>
+    </main>
+
+    <main class="container px-10 pt-10">
+        <section class="min-h-screen flex flex-col justify-center items-center text-center px-6 relative" id="contact">
+            <!-- Navigation -->
+            <div class="flex absolute text-start top-6 left-6">
+                <nav class="text-start flex flex-col gap-6 text-gray-400 me-5">
+                    <a href="#" class="text-white text-2xl">Home</a>
+                    <a href="#" class="text-white text-2xl">Work</a>
+                    <a href="#" class="text-white text-2xl">Contact</a>
+                </nav>
+                <nav class="text-start flex flex-col gap-6 text-gray-400">
+                    <a href="#" class="text-white text-2xl">About</a>
+                    <a href="#" class="text-white text-2xl">Blog</a>
+                    <a href="#" class="text-white text-2xl">Careers</a>
+                </nav>
+            </div>
+    
+            <!-- Call-to-Action Buttons -->
+            <div class="absolute md:top-6 top-2/10 hidden right-6 md:flex gap-4 z-20">
+                <a href="https://calendly.com/fortunenwohiri" target="_blank" rel="noopener noreferrer" class="inline-block mt-4 lg:px-15 px-10 py-5 bg-purple-300 text-black md:text-lg text-[12px] font-semibold rounded-full shadow-md transition-all duration-300 hover:bg-gray-200">
+                    Book A Call
+                </a>
+            </div>
+            <div class="absolute md:top-6 top-2/10 flex left-6 md:hidden gap-4 z-20">
+                <a href="https://calendly.com/fortunenwohiri" target="_blank" rel="noopener noreferrer" class="inline-block mt-4 lg:px-15 px-10 py-5 bg-purple-300 text-black md:text-lg text-[12px] font-semibold rounded-full shadow-md transition-all duration-300 hover:bg-gray-200">
+                    Book A Call
+                </a>
+            </div>
+    
+            <!-- Circle Decoration -->
+            <div class="absolute top-1/3 left-1/2 transform -translate-x-1/2 -translate-y-1/10 w-48 h-48 bg-orange-400 rounded-full"></div>
+    
+            <!-- Main Heading -->
+            <h1 class="font-bold lg:text-8xl md:text-6xl text-5xl glitch relative z-10 scroll-trigger-7">
+                Let’s build the next <br> big thing, together.
+            </h1>
+    
+            <!-- Contact and Social Links -->
+            <div class="absolute bottom-6 flex gap-4 items-center">
+                <button class="bg-gray-800 px-6 py-2 rounded-full border border-gray-600">
+                    <a
+                        href="https://mail.google.com/mail/?view=cm&fs=1&to=fortunenwohiri@gmail.com"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-sm underline hover:text-[#5724FF] font-zentry"
+                    >
+                        fortunenwohiri@gmail.com
+                    </a>
+                </button>
+                <button class="bg-gray-800 px-4 py-2 rounded-full border border-gray-600">
+                    <a href="https://x.com/fortuneCodeHub?t=qY098UDBlf3QM5pSNRc8Vw&s=09" target="_blank" rel="noopener noreferrer">
+                        <i class="bi bi-twitter"></i>
+                    </a>
+                </button>
+                <button class="bg-gray-800 px-4 py-2 rounded-full border border-gray-600">
+                    <a href="https://t.me/fortuneCodeHub12" target="_blank" rel="noopener noreferrer">
+                        <i class="bi bi-telegram"></i>
+                    </a>
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <script>
+
+        document.addEventListener("DOMContentLoaded", function() {
+            // Define the list of base colors
+            // const colors = ["#93c572", "#8A2BE2", "#0f0c29", "#302b63", "#24243e"];
+            const colors = [ "#0f0c29", "#302b63", "#24243e"];
+
+            // Function to generate a darker shade of a color
+            function darkenColor(hex, percent) {
+                let num = parseInt(hex.slice(1), 16),
+                    r = (num >> 16) - percent,
+                    g = ((num >> 8) & 0x00FF) - percent,
+                    b = (num & 0x0000FF) - percent;
+                return `#${(1 << 24 | (r < 0 ? 0 : r) << 16 | (g < 0 ? 0 : g) << 8 | (b < 0 ? 0 : b)).toString(16).slice(1)}`;
+            }
+
+            // Select a random base color
+            let baseColor = colors[Math.floor(Math.random() * colors.length)];
+
+            // Generate two shades (darker and slightly modified)
+            let midColor = darkenColor(baseColor, 30);
+            let endColor = darkenColor(baseColor, 50);
+
+            // Apply the gradient dynamically
+            document.body.style.background = `linear-gradient(to right, ${baseColor}, ${midColor}, ${endColor})`;
+        });
+    </script>
+    <!-- <section class="container mx-auto grid md:grid-cols-2 lg:grid-cols-3 gap-8 p-6">
+        <div class="glass z-10 p-6 rounded-lg shadow-lg transform hover:scale-105 transition">
+            <h2 class="text-2xl font-bold">🌐 Web Developer</h2>
+            <p class="text-gray-300">Building futuristic Web3 experiences.</p>
+        </div>
+        <div class="glass z-10 p-6 rounded-lg shadow-lg transform hover:scale-105 transition">
+            <h2 class="text-2xl font-bold">🎤 Raider (Shiller)</h2>
+            <p class="text-gray-300">Boosting Web3 projects with energy!</p>
+        </div>
+        <div class="glass z-10 p-6 rounded-lg shadow-lg transform hover:scale-105 transition">
+            <h2 class="text-2xl font-bold">💎 NFT Enthusiast</h2>
+            <p class="text-gray-300">Exploring, trading, and promoting NFTs.</p>
+        </div>
+    </section>
+    
+    <footer class="text-center py-8 footer">
+        <p class="text-gray-400">Follow me: <a href="#" class="text-blue-400 hover:underline">Twitter</a> | <a href="#" class="text-blue-400 hover:underline">Discord</a></p>
+    </footer> -->
+    <!-- Custom Javascript -->
+    <script src="assets/js/app.js"></script>
+</body>
+</html>

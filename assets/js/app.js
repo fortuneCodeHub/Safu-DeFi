@@ -161,6 +161,7 @@ if (document.querySelector(".project-name")) {
                 moreCaseStudiesBtn.addEventListener("click", function(event) {
                     event.preventDefault();
                     updateProject();
+                    console.log('It is working 2');
                 });
             })
             .catch(error => console.error("Error loading projects:", error));
